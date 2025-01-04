@@ -2564,7 +2564,7 @@ class MusicBot(discord.Client):
         e = discord.Embed()
         e.colour = discord.Colour(7506394)
         e.set_footer(
-            text=self.config.footer_text, icon_url="https://i.imgur.com/a/JXOzDYf"
+            text=self.config.footer_text, icon_url=""
         )
 
         # TODO: handle this part when EmbedResponse get handled.
@@ -2577,7 +2577,7 @@ class MusicBot(discord.Client):
 
         e.set_author(
             name=author_name,
-            url="BOT MUSIKIN RF`ormatica",
+            url="https://github.com/Just-Some-Bots/MusicBot",
             icon_url=avatar_url,
         )
         return e
@@ -2817,8 +2817,8 @@ class MusicBot(discord.Client):
                 + "`\n\n"
                 + self.str.get(
                     "cmd-help-response",
-                    "Untuk informasi tentang perintah tertentu, jalankan {example_cmd}\n"
-                    "Kalo ga ngerti tanya atmin @idoy",
+                    "For information about a particular command, run {example_cmd}\n"
+                    "For further help, see https://just-some-bots.github.io/MusicBot/",
                 ).format(
                     example_cmd=(
                         f"{prefix}`help [command]`"
@@ -2834,8 +2834,8 @@ class MusicBot(discord.Client):
                 + "\n```\n"
                 + self.str.get(
                     "cmd-help-response",
-                    "Untuk informasi tentang perintah tertentu, jalankan {example_cmd}\n"
-                    "Kalo ga ngerti tanya atmin @idoy ",
+                    "For information about a particular command, run {example_cmd}\n"
+                    "For further help, see https://just-some-bots.github.io/MusicBot/",
                 ).format(
                     example_cmd=(
                         f"{prefix}`help [command]`"
@@ -2847,7 +2847,7 @@ class MusicBot(discord.Client):
         if not is_all:
             desc += self.str.get(
                 "cmd-help-all",
-                "\nOnly Hanya menampilkan perintah yang dapat Anda gunakan, untuk daftar semua perintah, jalankan {example_cmd}",
+                "\nOnly showing commands you can use, for a list of all commands, run {example_cmd}",
             ).format(
                 example_cmd=(
                     f"{prefix}`help all`" if is_emoji else f"`{prefix}help all`"
@@ -7402,7 +7402,7 @@ class MusicBot(discord.Client):
         Prints the current bot version to chat.
         """
         return Response(
-            "BOT MUSIKIN RF`ormatica",
+            "BOT MUSIKIN RFormatica",
             delete_after=30,
         )
 
