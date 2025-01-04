@@ -2577,7 +2577,7 @@ class MusicBot(discord.Client):
 
         e.set_author(
             name=author_name,
-            url="https://github.com/Just-Some-Bots/MusicBot",
+            url="BOT MUSIKIN RF`ormatica",
             icon_url=avatar_url,
         )
         return e
@@ -7402,8 +7402,7 @@ class MusicBot(discord.Client):
         Prints the current bot version to chat.
         """
         return Response(
-            "https://github.com/Just-Some-Bots/MusicBot\n"
-            f"Current version:  `{BOTVERSION}`",
+            "BOT MUSIKIN RF`ormatica",
             delete_after=30,
         )
 
